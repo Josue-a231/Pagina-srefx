@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Roboto', Arial, sans-serif;
-            background: linear-gradient(135deg, #0d1b2a, #1b263b); /* Fondo oscuro y futurista */
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
             color: #e0e0e0;
             display: flex;
             flex-direction: column;
@@ -25,7 +25,6 @@
             position: relative;
         }
 
-        /* Fondo dinámico con partículas */
         body::before {
             content: '';
             position: fixed;
@@ -47,12 +46,12 @@
         header {
             background: linear-gradient(135deg, #1e3a8a, #3b82f6);
             color: white;
-            padding: 30px 5%;
-            font-size: clamp(1.5rem, 5vw, 2rem);
+            padding: 20px 5%;
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center; /* Centrado para mejor manejo en pantallas pequeñas */
             flex-wrap: wrap;
             position: relative;
             z-index: 1;
@@ -68,19 +67,21 @@
             font-family: 'Orbitron', sans-serif;
             margin: 0;
             font-weight: 700;
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-size: clamp(1.2rem, 3.5vw, 2rem);
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center; /* Centrado para mejor visualización */
         }
 
         header p {
-            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            font-size: clamp(0.8rem, 2vw, 1rem);
             margin: 5px 0 0;
             opacity: 0.9;
+            text-align: center;
         }
 
         .logo {
             flex-shrink: 0;
-            margin-right: 20px;
+            margin-right: 15px;
             transition: transform 0.3s ease;
         }
 
@@ -89,7 +90,7 @@
         }
 
         .logo img {
-            max-width: clamp(80px, 15vw, 120px);
+            max-width: clamp(60px, 12vw, 100px);
             height: auto;
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
         }
@@ -97,6 +98,7 @@
         .header-text {
             flex-grow: 1;
             text-align: center;
+            max-width: 100%; /* Evita que el texto se desborde */
         }
 
         .container {
@@ -342,14 +344,21 @@
             header {
                 flex-direction: column;
                 text-align: center;
-                padding: 20px;
+                padding: 15px;
             }
             .logo {
                 margin-right: 0;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
             .header-text {
                 width: 100%;
+            }
+            .header-text h1 {
+                font-size: clamp(1rem, 3.5vw, 1.5rem);
+                line-height: 1.2; /* Mejor manejo de líneas */
+            }
+            .header-text p {
+                font-size: clamp(0.7rem, 2.5vw, 0.9rem);
             }
             .container {
                 width: 95%;
@@ -381,13 +390,13 @@
 
         @media (max-width: 480px) {
             header h1 {
-                font-size: clamp(1.2rem, 4vw, 1.8rem);
+                font-size: clamp(0.9rem, 3vw, 1.3rem);
             }
             header p {
-                font-size: clamp(0.8rem, 3vw, 1rem);
+                font-size: clamp(0.6rem, 2.5vw, 0.8rem);
             }
             .logo img {
-                max-width: clamp(60px, 20vw, 100px);
+                max-width: clamp(50px, 15vw, 80px);
             }
             .cta {
                 padding: 10px 30px;
