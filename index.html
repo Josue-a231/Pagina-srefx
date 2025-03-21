@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reconocimiento Electrónico Facial X - SRefX</title> <!-- Nombre completo en el título -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0056b3, #00aaff);
+            color: white;
+            padding: 20px 40px;
+            font-size: 28px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+        }
+        .logo {
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+        .logo img {
+            max-width: 120px;
+            height: auto;
+        }
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            flex: 1;
+        }
+        .cta {
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .cta:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            max-width: 300px;
+            margin: auto;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .feature:nth-child(3) {
+            max-width: 350px;
+            padding: 25px;
+        }
+        .feature h3 {
+            color: #0056b3;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .feature-img {
+            margin-bottom: 15px;
+        }
+        .feature-img img {
+            max-width: 150px;
+            height: auto;
+        }
+        .extra-section {
+            background: white;
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .extra-section h2 {
+            color: #0056b3;
+            font-size: 26px;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0056b3;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            transition: background 0.3s ease;
+        }
+        .scroll-top:hover {
+            background: #003d82;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO_SREFX_SNFONDO.png" alt="Logo de SRefX">
+        </div>
+        <div class="header-text">
+            <h1>Sistema de Reconocimiento Electrónico Facial X - SRefX</h1> <!-- Nombre completo en el header -->
+            <p>Seguridad y tecnología al alcance de tu mano</p>
+        </div>
+    </header>
+    <div class="container">
+        <h2>El futuro del reconocimiento facial está aquí</h2>
+        <p>SRefX es un software líder en reconocimiento facial que combina precisión, velocidad y seguridad. Desarrollado con tecnologías avanzadas en Python, como la librería <strong>face_recognition</strong> para el análisis y comparación de rostros, y <strong>OpenCV</strong> para el procesamiento de imágenes en tiempo real, ofrecemos una solución confiable para empresas y particulares.</p>
+        <a href="https://wa.me/+527206302148" target="_blank" class="cta">Contratar</a>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-img">
+                    <img src="interfaz1.jpg" alt="Interfaz Principal">
+                </div>
+                <h3>Interfaz Principal</h3>
+                <p>Accede a una interfaz clara y moderna que te permite gestionar el reconocimiento facial con facilidad y rapidez.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-img">
+                    <img src="interfaz2.jpg" alt="Interfaz de Configuración">
+                </div>
+                <h3>Interfaz de Configuración</h3>
+                <p>Personaliza el sistema en minutos con una interfaz intuitiva, ideal para usuarios sin experiencia técnica.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-img">
+                    <img src="INTERFAZ3.png" alt="Reconocimiento Facial">
+                </div>
+                <h3>Reconocimiento Facial</h3>
+                <p>Identifica rostros con precisión superior al 99% en tiempo real, incluso en condiciones de poca luz, gracias a nuestra tecnología avanzada.</p>
+            </div>
+        </div>
+        
+        <div class="extra-section">
+            <h2>¿Por qué elegir SRefX?</h2>
+            <p>El reconocimiento facial ha revolucionado la seguridad y la identificación en el mundo moderno. SRefX lleva esta tecnología al siguiente nivel con:</p>
+            <ul>
+                <li><strong>Tecnología líder:</strong> Utilizamos <strong>face_recognition</strong>, una librería de Python que emplea aprendizaje profundo para identificar y verificar rostros con alta precisión, junto con <strong>OpenCV</strong> para procesar y analizar imágenes y videos en tiempo real.</li>
+                <li><strong>Seguridad de datos:</strong> Encriptación AES-256 para proteger la privacidad de los usuarios.</li>
+                <li><strong>Compatibilidad:</strong> Funciona en Windows, Linux, macOS y dispositivos móviles.</li>
+                <li><strong>Aplicaciones diversas:</strong> Ideal para control de acceso, autenticación bancaria, vigilancia y más.</li>
+                <li><strong>Actualizaciones constantes:</strong> Nuestro equipo mejora el software continuamente con nuevas funciones.</li>
+                <li><strong>Soporte 24/7:</strong> Asistencia técnica en cualquier momento para resolver tus dudas.</li>
+            </ul>
+            <p>El reconocimiento facial utiliza puntos clave del rostro (como la distancia entre ojos, forma de la nariz y mandíbula) para crear un mapa único que permite identificar a una persona con alta precisión. En SRefX, combinamos la potencia de <strong>face_recognition</strong> y <strong>OpenCV</strong> con inteligencia artificial para ofrecer resultados excepcionales, rápidos y seguros.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 SRefX - Todos los derechos reservados</p>
+        <p>Síguenos en <a href="https://www.instagram.com/srefx_company/" target="_blank">Instagram</a> | Contáctanos en <a href="https://wa.me/+527206302148" target="_blank">WhatsApp</a></p>
+    </footer>
+    
+    <div class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Ajustar footer
+        document.addEventListener("DOMContentLoaded", function() {
+            let footer = document.querySelector("footer");
+            function adjustFooter() {
+                let bodyHeight = document.body.scrollHeight;
+                let windowHeight = window.innerHeight;
+                if (bodyHeight < windowHeight) {
+                    footer.style.position = "absolute";
+                    footer.style.bottom = "0";
+                } else {
+                    footer.style.position = "relative";
+                }
+            }
+            adjustFooter();
+            window.addEventListener("resize", adjustFooter);
+        });
+
+        // Botón de volver arriba
+        const scrollTopBtn = document.querySelector(".scroll-top");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        });
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
